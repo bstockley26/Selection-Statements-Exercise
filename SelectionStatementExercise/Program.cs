@@ -7,7 +7,7 @@
             var r = new Random();
             var favNumber = r.Next(1, 5);
 
-            Console.WriteLine("Hello!! Welcome to my game!!!Try and guess the correct number between 1-30");
+            Console.WriteLine("Hello!! Welcome to my game!!!Try and guess the correct number between 1-5");
 
             int userInput = int.Parse(Console.ReadLine());
 
