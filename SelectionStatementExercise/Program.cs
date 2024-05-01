@@ -5,25 +5,25 @@
         static void Main(string[] args)
         {
             var r = new Random();
-            var favNumber = r.Next(1, 30);
+            var favNumber = r.Next(1, 5);
 
-            Console.WriteLine("Hello!! Welcome to my game!!! Guess a number between 1-30");
+            Console.WriteLine("Hello!! Welcome to my game!!!Try and guess the correct number between 1-30");
 
             int userInput = int.Parse(Console.ReadLine());
 
 
 
-            if (userInput == 26)
+            if (userInput == favNumber)
             {
                 Console.WriteLine("Congrats you guessed it Correct!!");
             }
-            else if (userInput < 26)
+            else if (userInput < favNumber)
             {
                 Console.WriteLine("Nope that is too low!");
             }
-            else if (userInput > 26)
+            else if (userInput > favNumber)
             {
-                Console.WriteLine("Nope that is too low!!");
+                Console.WriteLine("Nope that is too high!!");
             }
 
         }
